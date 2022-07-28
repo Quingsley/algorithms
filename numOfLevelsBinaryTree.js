@@ -9,7 +9,6 @@ class Node {
 }
 
 const countLevels = function (node) {
-  debugger;
   let numOfLevels;
   if (node === null) {
     numOfLevels = 0;
@@ -37,5 +36,5 @@ root.left.right.left.right = newNode(10);
 root.left.right.left.right.left = newNode(15);
 root.right.right = newNode(8);
 root.right.right.right = newNode(6);
-/*get leaf count of the above created tree*/
+/*get the number of levels in the binary tree*/
 console.log("The number of levels in the binary tree is: " + countLevels(root));
